@@ -1,0 +1,110 @@
+:root {
+
+    --login--primary-color: #2d2c2c;
+
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--login--primary-color);
+    font-family: Roboto, sans-serif;
+}
+
+.form{
+
+    width: 80%;
+    max-width: 32rem;
+    background-color: white;
+    border: 3px solid green;
+
+}
+
+.form__fieldset{
+
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+    padding: 2rem;
+}
+
+.form__title{
+
+    
+    font-weight: 600;
+    font-size: 2rem;
+    color:solid rgb(18, 18, 18);
+    padding-top: 2rem;
+}
+
+.form__label{
+    font-size: .8rem;
+    text-transform: uppercase;
+    
+
+
+}
+
+.form__input{
+
+    padding: .5em 0;
+    font-size: 1.2rem;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--login--primary-color);
+    margin-bottom: .8rem;
+    outline: none;
+    transition: padding-left .0.5s;
+
+}
+
+.form__input:focus{
+    outline: 2px solid var(--login--primary-color);
+    padding-left: .3rem;
+
+}
+
+.btn{
+
+    text-transform: uppercase;
+    font-size: .8rem;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding: .8rem 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+
+.btn-primary{
+
+    background-color: green;
+    color: white;
+
+}
+
+.btn-secondary{
+   color: var(--login--primary-color);
+}
+
+.form__action{
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form__action__aside{
+    font-size: .85rem;
+    flex-grow: 1;
+    text-align: right;
+    text-decoration: solid;
+    color: rgb(62, 62, 241);
+}
+
